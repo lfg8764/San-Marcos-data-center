@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Marcos Data Center Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #003366;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: none;
+            flex-direction: column;
+            background: #002244;
+        }
+        nav a {
+            color: white;
+            padding: 0.75em;
+            text-decoration: none;
+            border-top: 1px solid #004477;
+        }
+        .menu-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            position: absolute;
+            top: 1em;
+            right: 1em;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/600x300') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 4em 1em;
+        }
+        .hero h1 {
+            font-size: 2em;
+        }
+        .section {
+            padding: 2em 1em;
+        }
+        .section h2 {
+            color: #003366;
+        }
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        .card {
+            background: #f4f4f4;
+            padding: 1em;
+            border-radius: 8px;
+        }
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        @media (min-width: 600px) {
+            nav {
+                display: flex !important;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .cards {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .card {
+                flex: 1 1 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <button class="menu-btn" onclick="document.querySelector('nav').style.display='flex'">&#9776;</button>
+    <h1>San Marcos Data Center Project</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Project Overview</a>
+    <a href="#">Community Benefits</a>
+    <a href="#">FAQs</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Bringing Innovation to San Marcos</h1>
+    <p>A proposed state-of-the-art data center project</p>
+</section>
+
+<section class="section">
+    <h2>Project Overview</h2>
+    <p>The San Marcos Data Center Project aims to support local infrastructure, provide high-tech jobs, and boost economic growth in the region.</p>
+</section>
+
+<section class="section">
+    <h2>Community Benefits</h2>
+    <div class="cards">
+        <div class="card"><strong>💼 Job Creation:</strong> High-skilled positions and local employment opportunities.</div>
+        <div class="card"><strong>🏫 Education Partnerships:</strong> Workforce training with local schools and colleges.</div>
+        <div class="card"><strong>♻️ Sustainability:</strong> Energy-efficient systems and environmental responsibility.</div>
+        <div class="card"><strong>💰 Economic Growth:</strong> Boost to local economy through investment and infrastructure.</div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 San Marcos Data Center Project</p>
+</footer>
+
+</body>
+</html>
